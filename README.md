@@ -1,7 +1,7 @@
 # Awesome NPM Package
 
 ![MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![CI](https://img.shields.io/github/actions/workflow/status/Avenue3-dev/npm-package-template/publish.yml?style=flat-square&label=Build%20and%20Publish)
+![CI](https://img.shields.io/github/actions/workflow/status/Avenue3-dev/npm-package-template/build-test.yml?style=flat-square&label=Build%20and%20Test)
 <a href="https://www.npmjs.com/package/@avenue3-dev/npm-package-template">
 ![NPM](https://img.shields.io/npm/v/%40avenue3-dev%2Fnpm-package-template?style=flat-square&label=Lates%20Version)
 </a>
