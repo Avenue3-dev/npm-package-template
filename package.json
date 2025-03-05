@@ -1,0 +1,25 @@
+{
+  "name": "npm-package-template-mono-repo",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "format": "prettier --write .",
+    "release": "pnpm changeset publish",
+    "cc:changeset": "pnpm changeset-conventional",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "Avenue3 Ltd.",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/types": "^19.5.0",
+    "changeset-conventional-commits": "^0.2.5",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}

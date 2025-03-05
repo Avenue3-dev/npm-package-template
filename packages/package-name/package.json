@@ -1,0 +1,60 @@
+{
+  "name": "@avenue3-dev/npm-package-template",
+  "version": "0.0.0",
+  "description": "A collection of helpers for testing Mantine components with Cypress",
+  "homepage": "https://github.com/Avenue3-dev/npm-package-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avenue3-dev/npm-package-template"
+  },
+  "bugs": {
+    "url": "https://github.com/Avenue3-dev/npm-package-template/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "rollup -c && rollup -c rollup.dts.config.mjs && rm ./dist/index.d.ts",
+    "test": "vitest"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE.md"
+  ],
+  "keywords": [],
+  "author": "Avenue3 Ltd.",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.13.9",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "fast-glob": "^3.3.3",
+    "globals": "^15.15.0",
+    "happy-dom": "^17.2.2",
+    "rollup": "^4.34.9",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript-paths": "^1.5.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
+    "vitest": "^3.0.7"
+  }
+}
