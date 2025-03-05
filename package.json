@@ -4,8 +4,7 @@
   "scripts": {
     "build": "pnpm -r build",
     "format": "prettier --write .",
-    "release": "pnpm changeset publish",
-    "cc:changeset": "pnpm changeset-conventional",
+    "release": "changeset publish",
     "test": "vitest run",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
@@ -16,7 +15,7 @@
   "lint-staged": {
     "*.ts": [
       "prettier --write .",
-      "eslint --fix"
+      "pnpm -r lint:fix"
     ]
   },
   "devDependencies": {
@@ -25,7 +24,6 @@
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@commitlint/types": "^19.5.0",
-    "changeset-conventional-commits": "^0.2.5",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.3",

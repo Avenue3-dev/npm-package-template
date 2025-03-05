@@ -20,7 +20,8 @@
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "rollup -c && rollup -c rollup.dts.config.mjs && rm ./dist/index.d.ts",
-    "test": "vitest"
+    "test": "vitest",
+    "lint:fix": "eslint --fix ."
   },
   "files": [
     "dist",
